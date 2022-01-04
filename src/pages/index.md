@@ -1,6 +1,6 @@
 ---
 templateKey: index-page
-title: My test home page
+title: My test home page round two
 image: /img/home-jumbotron.jpg
 heading: Great coffee with a conscience
 subheading: Support sustainable farming while enjoying a cup
