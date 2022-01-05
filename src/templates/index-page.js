@@ -4,10 +4,10 @@ import { Link, graphql } from "gatsby";
 import { getImage } from "gatsby-plugin-image";
 
 import Layout from "../components/Layout";
-import Features from "../components/Features";
-import BlogRoll from "../components/BlogRoll";
-import FullWidthImage from "../components/FullWidthImage";
-
+// import Features from "../components/Features";
+// import BlogRoll from "../components/BlogRoll";
+// import FullWidthImage from "../components/FullWidthImage";
+import '../components/scss/masterslider/style/masterslider.min.css';
 // eslint-disable-next-line
 export const IndexPageTemplate = ({
   image,
@@ -21,7 +21,259 @@ export const IndexPageTemplate = ({
   const heroImage = getImage(image) || image;
 
   return (
-    <div>
+    <React.Fragment>
+      <div className="master-slider-wrapper">
+        <div id="mastersliderFullWidth02" className="master-slider-full-screen master-slider ms-skin-default mb-0">
+
+            {/* FIRST SLIDE */}
+            <div className="ms-slide">
+                <img src="masterslider/blank.gif" data-src="img/slider/consultingpress-management-consulting-unlock-your-business-potential.jpg" alt="ConsultignPress Unlock Your Business Potential"/>
+                <span className="ms-layer pi-caption-small" style={{
+                        left: "0", top: '200px', dataType: 'text', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "0"
+                      }}>
+                    management consulting
+                </span>
+
+                <h2 className="ms-layer pi-caption"
+                style={{
+                  left: "0", top: '260px', dataType: 'text', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "500"
+                }}>
+                    Unlock Your
+                </h2>
+
+                <h2 className="ms-layer pi-caption"
+                style={{
+                  left: "0", top: '340px', dataType: 'text', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "800"
+                }}>
+                    Business Potential
+                </h2>
+
+                <img className="ms-layer pi-link-arrow" src="masterslider/blank.gif" data-src="img/slider/circle-icon-green.svg" alt=""
+                  style={{
+                    left: "0", top: '445px', dataType: 'image', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "1100"
+                  }}/>
+
+                <span className="ms-layer pi-link"
+                  style={{
+                    left: "55px", top: '445px', dataType: 'text', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "1100"
+                  }}>
+                    Learn more
+                </span>
+
+                <a href="management-services-image-grid.html"></a>
+
+            </div>{/* END OF FIRST SLIDE */}
+
+            {/* SECOND SLIDE */}
+            <div className="ms-slide">
+                <img src="masterslider/blank.gif" data-src="img/slider/consultingpress-management-consulting-shape-your-business-future.jpg" alt="ConsultingPress Management Consulting"/>
+                <span className="ms-layer pi-caption-small" 
+                  style={{
+                    left: "0", top: '200px', dataType: 'text', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "0"
+                  }}>
+                    management consulting
+                </span>
+
+                <h2 className="ms-layer pi-caption"
+                    style={{
+                      left: "0", top: '260px', dataType: 'text', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "500"
+                    }}>
+                    Shape Your 
+                </h2>
+
+                <h2 className="ms-layer pi-caption"
+                    style={{
+                      left: "0", top: '340px', dataType: 'text', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "800"
+                    }}>
+                    Business Future
+                </h2>
+
+                <img className="ms-layer pi-link-arrow" src="masterslider/blank.gif" data-src="img/slider/circle-icon-green.svg" alt="" 
+                    style={{
+                      left: "0", top: '450px', dataType: 'image', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "1100"
+                    }}/>
+
+                <span className="ms-layer pi-link"
+                      style={{
+                        left: "55px", top: '445px', dataType: 'text', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "1100"
+                      }}>
+                    Learn more
+                </span>
+
+                <a href="management-services-image-grid.html"></a>
+
+            </div>{/* END OF SECOND SLIDE */}
+
+            <div className="ms-slide">
+                <img src="masterslider/blank.gif" data-src="img/slider/consultingpress-management-consulting-improve-your-business-performance.jpg" alt="ConsultignPress Management Consulting Improve Your Business Performance"/>
+                <span className="ms-layer pi-caption-small"
+                      style={{
+                        left: "0", top: '200px', dataType: 'text', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "0"
+                      }}>
+                    management consulting
+                </span>
+
+                <h2 className="ms-layer pi-caption"
+                    style={{
+                      left: "0", top: '260px', dataType: 'text', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "500"
+                    }}>
+                    Improve Your 
+                </h2>
+
+                <h2 className="ms-layer pi-caption"
+                    style={{
+                      left: "0", top: '340px', dataType: 'text', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "800"
+                    }}>
+                    Business Performance
+                </h2>
+
+                <img className="ms-layer pi-link-arrow" src="masterslider/blank.gif" data-src="img/slider/circle-icon-green.svg" alt=""
+                    style={{
+                      left: "0", top: '445px', dataType: 'image', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "1100"
+                    }}/>
+
+                <span className="ms-layer pi-link"
+                      style={{
+                        left: "55px", top: '445px', dataType: 'text', dataEffect: "left(short)", duration: "500", dataHideEffect: "fade", dataDelay: "1100"
+                      }}>
+                    Learn more
+                </span>
+
+                <a href="management-services-image-grid.html"></a>
+
+            </div>
+
+        </div>
+      </div>
+      <div className="page-content">
+
+          <div className="container">
+
+              <div className="row">
+                  <div className="col-md-12">
+                      <div className="custom-heading-02">
+                          <h2>Our Core Expertise</h2>
+                          <span>explore what we do</span>
+                      </div>
+                  </div>
+              </div>
+
+              <div className="row mb-30">
+                  <div className="col-md-4">
+                      <div className="service-box service-box-03">
+                          <div className="icon-container">
+                              <i className="lynny-radar"></i>
+                          </div>
+
+                          <div className="text-container">
+                              <a href="management-services-single.html">
+                                  <h3>Strategy & Growth</h3>
+                              </a>
+                              <p>
+                                  Defining your business goals and steps to achieve them.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div className="col-md-4">
+                      <div className="service-box service-box-03">
+                          <div className="icon-container">
+                              <i className="lynny-globe-2_1"></i>
+                          </div>
+
+                          <div className="text-container">
+                              <a href="management-services-global-expansion.html">
+                                  <h3>Global Expansion</h3>
+                              </a>
+
+                              <p>
+                                  Helping you grow and defend against the global challenges.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div className="col-md-4">
+                      <div className="service-box service-box-03">
+                          <div className="icon-container">
+                              <i className="lynny-pages-1"></i>
+                          </div>
+
+                          <div className="text-container">
+
+                              <a href="management-services-audit.html">
+                                  <h3>Audit & Assurance</h3>    
+                              </a>                            
+
+                              <p>
+                                  Helping to enhance the value of your business.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+              <div className="row">
+                  <div className="col-md-4">
+                      <div className="service-box service-box-03">
+                          <div className="icon-container">
+                              <i className="lynny-user-group-2"></i>
+                          </div>
+
+                          <div className="text-container">
+
+                              <a href="management-services-customer-strategy.html">
+                                  <h3>Customer Strategy</h3>
+                              </a>
+
+                              <p>
+                                  Achieve clear understanding of your customers needs.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div className="col-md-4">
+                      <div className="service-box service-box-03">
+                          <div className="icon-container">
+                              <i className="lynny-building-2"></i>
+                          </div>
+
+                          <div className="text-container">
+                              <a href="management-services-tax-consulting.html">
+                                  <h3>Tax Consulting</h3>
+                              </a>
+
+                              <p>
+                                  Understanding global taxes laws and practices.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+
+                  <div className="col-md-4">
+                      <div className="service-box service-box-03">
+                          <div className="icon-container">
+                              <i className="lynny-globes"></i>
+                          </div>
+
+                          <div className="text-container">
+                              <a href="management-services-subcategory.html">
+                                  <h3>Mergers & Acquisitions</h3>
+                              </a>
+
+                              <p>
+                                  We will help you expand your business.
+                              </p>
+                          </div>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+    </React.Fragment>
+  );
+      {/*<div>
       <FullWidthImage img={heroImage} title={title} subheading={subheading} />
       <section className="section section--gradient">
         <div className="container">
@@ -70,8 +322,7 @@ export const IndexPageTemplate = ({
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>*/}
 };
 
 IndexPageTemplate.propTypes = {
